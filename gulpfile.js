@@ -22,8 +22,8 @@ gulp.task('minify-html', function(){
 });
 
 gulp.task('escutar', function(){
-	gulp.watch('./source/scss/*.scss',[compilar]);
-	gulp.watch('./source/scss/*.scss',[minify-css]);
-	gulp.watch('./source/*.html',[minify-html]);
+	gulp.watch('./source/scss/*.scss',['compilar']);
+	gulp.watch('./source/scss/*.scss',['minify-css']);
+	gulp.watch('./source/*.html',['minify-html']);
 })
 
